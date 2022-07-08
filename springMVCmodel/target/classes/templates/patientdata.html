@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Patient Data</title>
+</head>
+<body>
+	<h1 th:text="${title}"></h1>
+	<h2>Patient Information</h2>
+	<h3 th:text="${patient.pName}"></h3>
+	<h3 th:text="${patient.pAddress}"></h3>
+	<h3 th:text="${patient.pDisease}"></h3>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+	
+	<h1 th:text="${title}"></h1>
+	<h2>Enter Patient Information </h2>
+	<form action="patientdata">
+		<h3>Enter Patient name: </h3>
+		<input type="text" name="pName">
+		<br>
+		<h3>Enter Patient Address: </h3>
+		<input type="text" name="pAddress">
+		<br>
+		<h3>Enter Patient Disease: </h3>
+		<input type="text" name="pDisease">
+		<br>
+		<button type="submit">Add data</button>
+	</form>
+</body>
+</html>
